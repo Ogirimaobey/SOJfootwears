@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SOJ Handmade Footwear - Bespoke Leather Shoes</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;700&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+    
+    <!-- Custom Styles & Modern Theme -->
+    <style>
+        body {
+            font-family: 'DM Sans', sans-serif;
+            background-color: #121212; /* Dark, modern background */
+            color: #EAEAEA;
+        }
+        .font-serif {
+            font-family: 'Cormorant Garamond', serif;
+        }
+        .hero-bg {
+            background-image: linear-gradient(rgba(18, 18, 18, 0.7), rgba(18, 18, 18, 0.7)), url('https://images.unsplash.com/photo-1599045118108-bf209a55ddb3?q=80&w=1973&auto=format&fit=crop');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed; /* Parallax effect */
+        }
+        .cta-bg {
+            background-image: linear-gradient(rgba(18, 18, 18, 0.85), rgba(18, 18, 18, 0.85)), url('https://images.unsplash.com/photo-1608226936333-5b30a57ab3a7?q=80&w=1932&auto=format&fit=crop');
+            background-size: cover;
+            background-position: center;
+        }
+        .accent-gold {
+            color: #D4AF37; /* A refined gold accent */
+        }
+        .bg-accent-gold {
+            background-color: #D4AF37;
+        }
+        .border-accent-gold {
+            border-color: #D4AF37;
+        }
+        .hover\:bg-accent-gold-dark:hover {
+            background-color: #c09e32;
+        }
+
+        /* Scroll Animation */
+        .reveal {
+            position: relative;
+            transform: translateY(100px);
+            opacity: 0;
+            transition: 1s all ease;
+        }
+        .reveal.active {
+            transform: translateY(0);
+            opacity: 1;
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Header & Navigation -->
+    <header class="bg-black/50 backdrop-blur-lg sticky top-0 z-50">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold font-serif text-white">SOJ HANDMADE</a>
+            <div class="hidden md:flex space-x-8 items-center">
+                <a href="#story" class="text-gray-300 hover:text-white transition duration-300">Our Story</a>
+                <a href="#collection" class="text-gray-300 hover:text-white transition duration-300">The Collection</a>
+                <a href="#contact" class="bg-accent-gold text-black px-5 py-2 rounded-full font-semibold hover:bg-accent-gold-dark transition duration-300">Begin Your Journey</a>
+            </div>
+            <button class="md:hidden text-white">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                </svg>
+            </button>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero-bg text-white min-h-screen flex items-center">
+            <div class="container mx-auto px-6 text-center">
+                <h1 class="text-5xl md:text-7xl font-serif font-bold leading-tight mb-4 reveal">Your shoes should tell your story.</h1>
+                <p class="text-xl md:text-2xl mb-8 max-w-3xl mx-auto reveal" style="transition-delay: 200ms;">Not compromise it.</p>
+                <a href="#contact" class="bg-accent-gold text-black px-10 py-4 rounded-full font-semibold text-lg hover:bg-accent-gold-dark transition duration-300 inline-block reveal" style="transition-delay: 400ms;">Begin Your Bespoke Journey</a>
+            </div>
+        </section>
+
+        <!-- Founder's Welcome Section -->
+        <section id="story" class="py-24 bg-[#1a1a1a]">
+            <div class="container mx-auto px-6">
+                <div class="flex flex-col md:flex-row items-center gap-12 md:gap-20">
+                    <div class="md:w-5/12 reveal">
+                        <div class="relative">
+                             <div class="absolute -top-5 -left-5 w-full h-full border-4 border-accent-gold rounded-lg"></div>
+                             <img src="https://i.postimg.cc/4xfkxxNm/492709345-2397421743951231-110552615961134099-n-removebg-preview.png" alt="Salome Ometere Jose, Founder of SOJ Handmade" class="relative w-full object-cover rounded-lg shadow-2xl" onerror="this.onerror=null;this.src='https://placehold.co/400x480/1a1a1a/d4af37?text=Salome+O.+Jose';">
+                        </div>
+                    </div>
+                    <div class="md:w-7/12 text-center md:text-left reveal" style="transition-delay: 200ms;">
+                        <h2 class="text-4xl md:text-5xl font-serif font-bold mb-6 text-white">Meet the Artisan Behind Your Story</h2>
+                        <p class="text-xl text-gray-300 mb-6 leading-relaxed">
+                            "I’m <span class="accent-gold">Salome Ometere Jose</span>. I believe your shoes should be as uncompromising as your spirit. Every pair I craft isn't just footwear; it’s armor, expression, and a stage for the truth about who you are."
+                        </p>
+                        <p class="text-gray-400 mb-8 leading-relaxed">
+                           This isn't just about covering your feet; it's about walking with confidence, pride, and a style that truly reflects you.
+                        </p>
+                        <a href="#" class="text-accent-gold font-semibold text-lg group">
+                            Discover My Full Story
+                            <span class="inline-block transition-transform group-hover:translate-x-2 motion-reduce:transform-none">&rarr;</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- The Promise Section -->
+        <section class="py-24 bg-[#121212]">
+            <div class="container mx-auto px-6 text-center">
+                <div class="reveal">
+                    <h2 class="text-4xl font-serif font-bold mb-3">The SOJ Promise</h2>
+                    <p class="text-gray-400 mb-16 max-w-2xl mx-auto">We don't just make shoes. We solve problems and build confidence from the ground up.</p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+                    <!-- Promise 1 -->
+                    <div class="border border-gray-800 p-8 rounded-lg bg-[#1a1a1a]/50 reveal">
+                        <h3 class="text-2xl font-bold font-serif mb-4 accent-gold">Perfect Fit</h3>
+                        <p class="text-gray-400">Every pair is handcrafted to the exact contours of your feet, ending painful compromises forever.</p>
+                    </div>
+                    <!-- Promise 2 -->
+                    <div class="border border-gray-800 p-8 rounded-lg bg-[#1a1a1a]/50 reveal" style="transition-delay: 200ms;">
+                        <h3 class="text-2xl font-bold font-serif mb-4 accent-gold">Personal Style</h3>
+                        <p class="text-gray-400">We fix style confusion. Your shoes will reflect who you are and empower you to show up bolder.</p>
+                    </div>
+                    <!-- Promise 3 -->
+                    <div class="border border-gray-800 p-8 rounded-lg bg-[#1a1a1a]/50 reveal" style="transition-delay: 400ms;">
+                        <h3 class="text-2xl font-bold font-serif mb-4 accent-gold">Lasting Quality</h3>
+                        <p class="text-gray-400">With zero shortcuts and the finest materials, we make regret-proof footwear that endures.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Collection Preview -->
+        <section id="collection" class="py-24 bg-[#1a1a1a]">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-16 reveal">
+                    <h2 class="text-4xl md:text-5xl font-serif font-bold">A Gallery of Possibilities</h2>
+                    <p class="text-gray-400 mt-4 max-w-2xl mx-auto">Each style is a conversation starter, handcrafted with a story in mind.</p>
+                </div>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <!-- Shoe 1 -->
+                    <div class="group reveal">
+                        <div class="overflow-hidden rounded-lg">
+                            <img src="https://images.unsplash.com/photo-1588117269595-154c15513727?q=80&w=1887&auto=format&fit=crop" alt="Classic Brown Leather Oxfords" class="w-full h-96 object-cover group-hover:scale-110 transition-transform duration-500" onerror="this.onerror=null;this.src='https://placehold.co/400x520/dcd0c0/121212?text=The+Chairman';">
+                        </div>
+                        <h3 class="mt-4 text-xl font-semibold font-serif">The Chairman Oxford</h3>
+                        <p class="text-gray-500">For the boardroom and beyond.</p>
+                    </div>
+                    <!-- Shoe 2 -->
+                    <div class="group reveal" style="transition-delay: 200ms;">
+                        <div class="overflow-hidden rounded-lg">
+                            <img src="https://images.unsplash.com/photo-1617606002779-51d866bdd1d1?q=80&w=2070&auto=format&fit=crop" alt="Suede Tassel Loafers" class="w-full h-96 object-cover group-hover:scale-110 transition-transform duration-500" onerror="this.onerror=null;this.src='https://placehold.co/400x520/c4a484/121212?text=The+Lagos+Friday';">
+                        </div>
+                        <h3 class="mt-4 text-xl font-semibold font-serif">The 'Lagos Friday' Loafer</h3>
+                        <p class="text-gray-500">Effortless style for the creative.</p>
+                    </div>
+                    <!-- Shoe 3 -->
+                    <div class="group reveal" style="transition-delay: 400ms;">
+                       <img src="https://images.unsplash.com/photo-1603218222842-62678a03994f?q=80&w=1887&auto=format&fit=crop" alt="Two-tone Brogue Boots" class="w-full h-96 object-cover group-hover:scale-110 transition-transform duration-500" onerror="this.onerror=null;this.src='https://placehold.co/400x520/a0522d/121212?text=The+Nomad+Boot';">
+                        <h3 class="mt-4 text-xl font-semibold font-serif">The Nomad Boot</h3>
+                        <p class="text-gray-500">Confidence for the journey.</p>
+                    </div>
+                    <!-- Shoe 4 -->
+                    <div class="group reveal" style="transition-delay: 600ms;">
+                        <div class="overflow-hidden rounded-lg">
+                            <img src="https://images.unsplash.com/photo-1620925979854-a1288bff43a6?q=80&w=1887&auto=format&fit=crop" alt="Elegant Black Dress Shoes" class="w-full h-96 object-cover group-hover:scale-110 transition-transform duration-500" onerror="this.onerror=null;this.src='https://placehold.co/400x520/333333/ffffff?text=The+Vow';">
+                        </div>
+                        <h3 class="mt-4 text-xl font-semibold font-serif">The Vow Derby</h3>
+                        <p class="text-gray-500">For life's most important steps.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Testimonials & Credibility Section -->
+        <section class="py-24 bg-[#121212]">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-16 reveal">
+                    <h2 class="text-4xl md:text-5xl font-serif font-bold">Words from Our Wearers</h2>
+                    <p class="text-gray-400 mt-4">Over 1,000 customers now walk differently. Here's what they say.</p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div class="bg-[#1a1a1a] p-8 rounded-lg border border-gray-800 reveal">
+                        <p class="text-gray-300 italic text-lg mb-6">"My SOJ shoes are the most complimented item I own. The comfort is unbelievable. I finally have shoes that feel like they were made just for me... because they were."</p>
+                        <p class="font-bold text-white">- David A., Lagos</p>
+                    </div>
+                    <div class="bg-[#1a1a1a] p-8 rounded-lg border border-gray-800 reveal" style="transition-delay: 200ms;">
+                        <p class="text-gray-300 italic text-lg mb-6">"The attention to detail is incredible. Salome took the time to understand my style, and the result is a pair of shoes that give me a confidence boost every time I wear them."</p>
+                        <p class="font-bold text-white">- Chiamaka E., Abuja</p>
+                    </div>
+                </div>
+                <div class="text-center mt-16 reveal">
+                    <h3 class="text-lg font-semibold text-gray-500 mb-4 tracking-widest uppercase">Officially Registered & Trusted</h3>
+                    <div class="flex justify-center items-center space-x-12">
+                        <p class="font-bold text-gray-400 text-2xl">CAC</p>
+                        <p class="font-bold text-gray-400 text-2xl">SMEDAN</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Final CTA Section -->
+        <section id="contact" class="cta-bg py-24">
+            <div class="container mx-auto px-6 text-center reveal">
+                <h2 class="text-4xl md:text-6xl font-serif font-bold leading-tight mb-4 text-white">Your next steps deserve a stage.</h2>
+                <p class="text-lg md:text-xl mb-10 max-w-3xl mx-auto text-gray-300">If your shoes should speak your personality, then you and I need to talk. Let’s make shoes that finally match the person you’ve been trying to show the world.</p>
+                <a href="https://wa.me/2349076472291" target="_blank" class="bg-accent-gold text-black px-12 py-4 rounded-full font-semibold text-lg hover:bg-accent-gold-dark transition duration-300 inline-block">
+                    Start a Conversation on WhatsApp
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-black text-gray-400">
+        <div class="container mx-auto px-6 py-10">
+            <div class="flex flex-col md:flex-row justify-between items-center text-center md:text-left">
+                <div class="mb-6 md:mb-0">
+                    <h3 class="text-2xl font-bold font-serif text-white">SOJ HANDMADE</h3>
+                    <p class="text-sm">Regret-proof footwear for your story.</p>
+                    <p class="text-sm mt-2">Kaduna, Nigeria | Delivering Nationwide</p>
+                </div>
+                <div class="flex space-x-6">
+                    <a href="#" class="hover:text-white transition duration-300">Instagram</a>
+                    <a href="#" class="hover:text-white transition duration-300">Facebook</a>
+                    <a href="#" class="hover:text-white transition duration-300">Twitter</a>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-8 pt-6 text-center text-sm text-gray-600">
+                <p>&copy; 2024 SOJ Handmade Footwear. All Rights Reserved. Designed with passion.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JS for Scroll Animations -->
+    <script>
+        function reveal() {
+            var reveals = document.querySelectorAll(".reveal");
+            for (var i = 0; i < reveals.length; i++) {
+                var windowHeight = window.innerHeight;
+                var elementTop = reveals[i].getBoundingClientRect().top;
+                var elementVisible = 150;
+                if (elementTop < windowHeight - elementVisible) {
+                    reveals[i].classList.add("active");
+                } else {
+                    reveals[i].classList.remove("active");
+                }
+            }
+        }
+        window.addEventListener("scroll", reveal);
+        // To reveal elements already in view on load
+        reveal();
+    </script>
+
+</body>
+</html>
