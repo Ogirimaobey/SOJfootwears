@@ -93,10 +93,15 @@
         <section id="story" class="py-24 bg-white">
             <div class="container mx-auto px-6">
                 <div class="flex flex-col md:flex-row items-center gap-12 md:gap-20">
-                    <div class="md:w-5/12 reveal flex justify-center items-center p-8">
-                        <div class="relative w-full max-w-sm h-96">
-                            <img src="https://i.postimg.cc/3xx8TVKx/image.png" alt="Salome Ometere Jose working on a shoe" class="absolute bottom-0 left-0 w-3/4 object-cover rounded-lg shadow-2xl border-4 border-white transform -rotate-12" onerror="this.onerror=null;this.src='https://placehold.co/300x400/cccccc/1A202C?text=Founder+at+Work';">
-                            <img src="https://i.postimg.cc/SRbQbKKB/image.png" alt="Salome Ometere Jose, Founder of SOJ Handmade" class="absolute top-0 right-0 w-3/4 object-cover rounded-lg shadow-2xl border-4 border-white transform rotate-6" onerror="this.onerror=null;this.src='https://placehold.co/300x400/cccccc/1A202C?text=Salome+O.+Jose';">
+                    <!-- Updated Image Container -->
+                    <div class="md:w-5/12 reveal flex justify-center items-center p-4 md:p-8">
+                        <!-- On medium screens and up, it's a relative container for absolute positioning -->
+                        <!-- On mobile, it's a simple flex container -->
+                        <div class="relative w-full max-w-sm h-96 md:h-96 flex flex-row md:block gap-4 justify-center">
+                            <!-- Mobile: Stacks cleanly. Desktop: Positioned absolutely -->
+                            <img src="https://i.postimg.cc/3xx8TVKx/image.png" alt="Salome Ometere Jose working on a shoe" class="w-1/2 md:absolute md:bottom-0 md:left-0 md:w-3/4 object-cover rounded-lg shadow-2xl border-4 border-white md:transform md:-rotate-12" onerror="this.onerror=null;this.src='https://placehold.co/300x400/cccccc/1A202C?text=Founder+at+Work';">
+                            <!-- Mobile: Stacks cleanly. Desktop: Positioned absolutely -->
+                            <img src="https://i.postimg.cc/SRbQbKKB/image.png" alt="Salome Ometere Jose, Founder of SOJ Handmade" class="w-1/2 md:absolute md:top-0 md:right-0 md:w-3/4 object-cover rounded-lg shadow-2xl border-4 border-white md:transform md:rotate-6" onerror="this.onerror=null;this.src='https://placehold.co/300x400/cccccc/1A202C?text=Salome+O.+Jose';">
                         </div>
                     </div>
                     <div class="md:w-7/12 text-center md:text-left reveal" style="transition-delay: 200ms;">
@@ -297,6 +302,7 @@
 
 </body>
 </html>
+
 
 
 
